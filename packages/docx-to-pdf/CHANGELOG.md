@@ -1,5 +1,16 @@
 # @docx-editor.dev/docx-to-pdf
 
+## 2.34.0
+
+### Patch Changes
+
+- afca693: PDF export parses merged equation text in linear time and no longer writes two adjustment numbers without a separator.
+- 6505457: Equations with spaced operators paint each source run as one text span, and PDF export writes one text object per face and baseline, so pages with many operators paint faster and export smaller. Fixes #1560.
+- 620b7ca: Markdown conversion and PDF export build against the latest layout records again.
+- f7baed2: PDF export paints equations with an overline or underline bar and draws equation text in the same face that layout measured.
+- 78abf89: PDF export draws highlight, shading, strikethrough, every underline style, and tracked-change marks continuously across the gaps of justified and distributed lines, as the editor does.
+- Updated dependencies: @docx-editor.dev/core@2.34.0, @docx-editor.dev/fonts-cjk@2.34.0, @docx-editor.dev/fonts@2.34.0, @docx-editor.dev/pro@2.34.0
+
 ## 2.33.0
 
 ### Minor Changes

@@ -1,5 +1,12 @@
 # @docx-editor.dev/pro
 
+## 2.34.0
+
+### Patch Changes
+
+- 74b3b0e: In a collaboration session, moving a block toward the start of its container, or formatting text whose properties are stored out of order, no longer removes a neighboring block or property for every participant. A table moved after concurrent moves of the same table keeps the empty paragraph between it and the next table. Fixes #1572. Fixes #1606.
+- Updated dependencies: @docx-editor.dev/core@2.34.0, @docx-editor.dev/react@2.34.0, @docx-editor.dev/vue@2.34.0
+
 ## 2.33.0
 
 ### Minor Changes

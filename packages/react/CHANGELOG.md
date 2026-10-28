@@ -1,5 +1,13 @@
 # @eigenpal/docx-js-editor
 
+## 2.34.0
+
+### Patch Changes
+
+- dbe57b9: Footnote and endnote numbering comes from each section's own note properties, including its start value, instead of the document-wide settings, and applying note properties to the whole document updates every section and keeps the values you did not change. Fixes #1527.
+- 59e3c77: Show the macOS keyboard shortcut in the React and Vue link tooltips. Fixes #1195
+- Updated dependencies: @docx-editor.dev/core@2.34.0, @docx-editor.dev/i18n@2.34.0
+
 ## 2.33.0
 
 ### Patch Changes
